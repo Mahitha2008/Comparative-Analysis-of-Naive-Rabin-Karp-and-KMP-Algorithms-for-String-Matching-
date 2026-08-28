@@ -98,3 +98,18 @@ for p in patterns:
     _, c2 = kmp_search(text_large, p) 
     _, c3 = rabin_karp(text_large, p) 
     print(f'{p:>12} {c1:>10} {c2:>10} {c3:>10}') 
+PS C:\Users\MAHITHA\daa lab> & C:\Users\MAHITHA\AppData\Local\Python\pythoncore-3.14-64\python.exe "c:/Users/MAHITHA/daa lab/, Rabin-Karp, and KMP Algorithms for String  Matching"
+Text:    AABAACAADAABAABA
+Pattern: AABA
+
+Naive  -> Matches at: [0, 9, 12], Comparisons: 30
+KMP    -> Matches at: [0, 9, 12], Comparisons: 18
+RK     -> Matches at: [0, 9, 12], Comparisons: 12
+
+     Pattern      Naive        KMP         RK
+--------------------------------------------------
+          AB      12460      10000       1188
+        ABCD      13194      10000        195
+      ABCDAB      13226      10007        142
+    ABCDABCD      13226      10008        143
+PS C:\Users\MAHITHA\daa lab> 
